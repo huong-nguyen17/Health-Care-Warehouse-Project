@@ -1,0 +1,15 @@
+/* 
+This script is to import data from the download folder to the SQL server before ETL 
+This table will hold raw data to be processed in the next step.
+*/
+
+DROP TABLE IF EXISTS Raw_FHIR_Bundle;
+GO
+CREATE TABLE Raw_FHIR_Bundle(
+	EntryID INT IDENTITY(1,1) PRIMARY KEY,
+	FullURL NVARCHAR(255),
+	ResourceType NVARCHAR(100),
+	ResourceJSON NVARCHAR(MAX)
+	);
+
+
