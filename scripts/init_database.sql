@@ -33,11 +33,20 @@ USE DataWarehouse_HC;
 GO
 
 -- Create Schemas
-CREATE SCHEMA bronze;
+IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'bronze')
+BEGIN
+    EXEC('CREATE SCHEMA bronze');
+END
 GO
 
-CREATE SCHEMA silver;
+IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'silver')
+BEGIN
+    EXEC('CREATE SCHEMA silver');
+END
 GO
 
-CREATE SCHEMA gold;
+IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'gold')
+BEGIN
+    EXEC('CREATE SCHEMA gold');
+END
 GO
