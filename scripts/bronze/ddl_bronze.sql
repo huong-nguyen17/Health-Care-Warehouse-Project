@@ -112,3 +112,23 @@ CREATE TABLE bronze.Observation (
     IssuedDate            DATETIME2
 );
 GO
+DROP TABLE IF EXISTS bronze.Practitioner;
+GO
+
+CREATE TABLE bronze.Practitioner (
+	PractitionerKey		INT,
+	PractitionerID		NVARCHAR(64),
+	IdentifierValue     NVARCHAR(64),
+	System				NVARCHAR(255),
+	Prefix				NVARCHAR(50),
+	GivenName			NVARCHAR(100),
+	FamilyName			NVARCHAR(100),
+	Email               NVARCHAR(255),
+	Gender              NVARCHAR(20),
+	AddressLine         NVARCHAR(255),
+	City				NVARCHAR(100),
+	State				NVARCHAR(100),
+	PostalCode          NVARCHAR(20),
+	UtilizationEncounters NVARCHAR(50),
+	IsActive BIT
+);
