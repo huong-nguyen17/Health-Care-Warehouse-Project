@@ -1,4 +1,4 @@
-# 🏥 FHIR Healthcare Data Lakehouse For Analytics
+# 🏥 FHIR Healthcare Data Warehouse For Analytics
 End‑to‑End Pipeline: FHIR → Ingestion → Lakehouse → DW → Power BI (another repo)
 
 This project builds a complete modern healthcare analytics platform using FHIR resources, Lakehouse architecture, and Gold‑layer dimensional modeling.
@@ -117,7 +117,7 @@ fhir-healthcare-warehouse/
 
 ---
 
-### 🛢️ Lakehouse Layers
+### 🛢️ Warehouse Layers
 
 <img width="1024" height="1024" alt="layers" src="https://github.com/user-attachments/assets/ec6da2a4-e52e-4e08-a9a9-6353c8d5f72b" />
 
